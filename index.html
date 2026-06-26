@@ -1895,7 +1895,7 @@
           </div>
           <div class="splash-block">
             <p class="splash-block-label">✨ Splash mini-project — start it this week</p>
-            <p class="splash-block-desc">A semantic search CLI over your own GitHub commit history. Describe a change in plain language (<code>search-commits "the time I fixed the race condition in the queue"</code>) and it returns the actual matching commits — ranked, not keyword-matched. Same embeddings work you're about to do in Week 2, just made visible early.</p>
+            <p class="splash-block-desc">A semantic search CLI over your own GitHub commit history. Describe a change in plain language (<code>search-commits "the time I fixed the race condition in the queue"</code>) and it returns the actual matching commits — ranked, not keyword-matched. Same embeddings work you're about to do in Week 2, made concrete with something personal. <strong>Note:</strong> this is a learning exercise, not a portfolio piece — keep it scoped.</p>
             <ul class="wb-list">
               <li class="task" data-task="t201" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Pull commit messages + diffs from 1–2 of your own repos via the GitHub API</span></li>
               <li class="task" data-task="t202" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Get this far by end of Week 1: raw commit data pulled and stored locally</span></li>
@@ -2030,11 +2030,11 @@
             </div>
           </div>
           <div class="splash-block">
-            <p class="splash-block-label">✨ Splash mini-project — finish and ship</p>
+            <p class="splash-block-label">✨ Splash mini-project — finish as a learning exercise</p>
             <ul class="wb-list">
               <li class="task" data-task="t203" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Embed all pulled commit messages + diff summaries</span></li>
               <li class="task" data-task="t204" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Wire up the CLI: natural-language query → ranked list of matching commits</span></li>
-              <li class="task" data-task="t205" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Post it on LinkedIn/X/your blog with a 30-second demo clip or screenshot — this is your first visible, shareable artifact, and it should go out this week</span></li>
+              <li class="task" data-task="t205" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Keep this one for yourself — good embeddings practice, not portfolio-grade on its own. Don't over-invest in polish; that effort is better spent from Week 3 onward.</span></li>
             </ul>
           </div>
           <div class="apptrack-inline">
@@ -2105,7 +2105,7 @@
                 <ul class="spec-list">
                   <li class="task" data-task="t105" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">A <code>retrieval/</code> module exposing a single <code>search(query, k)</code> function backed by pgvector</span></li>
                   <li class="task" data-task="t106" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">A benchmark script + results table comparing numpy brute-force, pgvector HNSW, and BM25</span></li>
-                  <li class="task" data-task="t206" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">A working, shipped semantic commit-search CLI, posted publicly</span></li>
+                  <li class="task" data-task="t206" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">A working semantic commit-search CLI (personal tool, not a portfolio piece)</span></li>
                 </ul>
               </div>
               <div class="spec-block features">
@@ -2123,7 +2123,7 @@
                   <li class="task" data-task="t111" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">pgvector query returns in &lt;100ms on 1000+ docs</span></li>
                   <li class="task" data-task="t112" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Recall numbers are reproducible on rerun</span></li>
                   <li class="task" data-task="t113" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">You can explain why BM25 wins or loses on at least 2 example queries</span></li>
-                  <li class="task" data-task="t207" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Splash project is live and publicly posted, not just working locally</span></li>
+                  <li class="task" data-task="t207" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Splash CLI runs end-to-end locally — no public posting needed</span></li>
                 </ul>
               </div>
             </div>
@@ -2252,6 +2252,7 @@
                   <li class="task" data-task="t120" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Live URL someone else can curl</span></li>
                   <li class="task" data-task="t121" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Handles a corrupted/empty file upload gracefully</span></li>
                   <li class="task" data-task="t122" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">p95 search latency measured and documented</span></li>
+                  <li class="task" data-task="t501" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Business framing: write one sentence translating this into impact a non-technical stakeholder would care about (e.g. "cuts document search time from minutes to seconds for a support team")</span></li>
                 </ul>
               </div>
             </div>
@@ -2519,6 +2520,7 @@
                   <li class="task" data-task="t139" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">One induced tool failure recovers without crashing</span></li>
                   <li class="task" data-task="t140" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Audit log is queryable after the run</span></li>
                   <li class="task" data-task="t304" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Traces from this system are visible in a dashboard, even a basic one</span></li>
+                  <li class="task" data-task="t502" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Business framing: one sentence on impact (e.g. "catches X% of review issues before a human reviewer sees the PR, cutting review turnaround time")</span></li>
                 </ul>
               </div>
             </div>
@@ -2647,6 +2649,7 @@
                   <li class="task" data-task="t148" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Trace shows every step, not just start/end</span></li>
                   <li class="task" data-task="t149" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Report includes source citations</span></li>
                   <li class="task" data-task="t307" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">You can pull up traces from both Week 5 and Week 6 systems side by side</span></li>
+                  <li class="task" data-task="t503" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Business framing: one sentence on impact (e.g. "compresses N hours of manual research into a single automated report")</span></li>
                 </ul>
               </div>
             </div>
@@ -2775,10 +2778,12 @@
                   <li class="task" data-task="t156" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Fine-tuned model outperforms the base model on your test set</span></li>
                   <li class="task" data-task="t157" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Model runs locally without the original training environment</span></li>
                   <li class="task" data-task="t158" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">You can justify every hyperparameter choice in an interview</span></li>
+                  <li class="task" data-task="t504" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Honest framing: write one sentence on when you'd actually reach for fine-tuning over RAG/prompting in a real job — for your own clarity, not a resume bullet</span></li>
                 </ul>
               </div>
             </div>
           </div>
+          <div class="writeup-note">📝 Note on positioning: keep this week for what it's worth — genuine understanding of fine-tuning, LoRA/QLoRA, and the decision framework for when it's worth the cost. But don't lead your resume or portfolio with this project. Most AI engineer roles right now lean on RAG, agents, and serving infra, not custom fine-tuning. Treat this as depth you can speak to if asked, not a headline.</div>
         </div>
       </div>
 
@@ -2897,6 +2902,7 @@
                   <li class="task" data-task="t166" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Cache hit measurably reduces cost on a repeated query</span></li>
                   <li class="task" data-task="t167" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Alert rule has been manually triggered once to confirm it fires</span></li>
                   <li class="task" data-task="t311" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">You can explain, in an interview, how you'd extend this to a fourth system without rewriting the instrumentation layer</span></li>
+                  <li class="task" data-task="t505" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Business framing: write the cost/risk story in plain terms (e.g. "would have caught a runaway agent loop before it burned $X in API spend") — this is your strongest project, make sure you can pitch it to a non-technical stakeholder in 30 seconds</span></li>
                 </ul>
               </div>
             </div>
@@ -2939,6 +2945,13 @@
             <p class="apptrack-inline-label">🎯 Application track</p>
             <ul class="wb-list">
               <li class="task" data-task="at06" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Keep the steady 1–2/week application cadence going even during the buffer week</span></li>
+            </ul>
+          </div>
+          <div class="splash-block">
+            <p class="splash-block-label">⚠️ Document one real failure</p>
+            <p class="splash-block-desc">This is the single highest-signal artifact for interviews — a calm, specific failure story beats another clean demo.</p>
+            <ul class="wb-list">
+              <li class="task" data-task="t506" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Pick one real failure from any of your Weeks 5–8 systems: what broke, how you found out (which trace/alert caught it, or how you noticed manually), and what you changed afterward — write it up even if it's small, a caught cache bug counts</span></li>
             </ul>
           </div>
         </div>
@@ -3174,6 +3187,7 @@
                 <ul class="spec-list">
                   <li class="task" data-task="t181" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">A stranger can use the live URL without your help</span></li>
                   <li class="task" data-task="t182" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">You've personally tested 3 edge cases and they fail gracefully</span></li>
+                  <li class="task" data-task="t507" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Business framing: one sentence on who would actually use this and why they'd care, in language a hiring manager (not just an engineer) would understand</span></li>
                 </ul>
               </div>
             </div>
@@ -3198,7 +3212,7 @@
         <div class="week-body">
           <div class="wb-cols">
             <div>
-              <p class="wb-col-label">Write-up template (each project)</p>
+              <p class="wb-col-label">Write-up template (descriptive — 3 of 4)</p>
               <ul class="wb-list">
                 <li class="task" data-task="t080" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Problem statement — why did you build this?</span></li>
                 <li class="task" data-task="t081" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Key technical decisions and tradeoffs (with the alternative you rejected)</span></li>
@@ -3211,10 +3225,20 @@
               <ul class="wb-list">
                 <li class="task" data-task="t084" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Every RAG tradeoff: chunking, retrieval, reranking</span></li>
                 <li class="task" data-task="t085" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">"How would you evaluate this AI system?" — have a framework ready</span></li>
-                <li class="task" data-task="t086" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">"Walk me through a system you built" — for each project in depth</span></li>
+                <li class="task" data-task="t086" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">"Walk me through a system you built" — for each project in depth, including the observability platform</span></li>
                 <li class="task" data-task="t087" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Transformer basics: attention, context window, why hallucinations happen</span></li>
+                <li class="task" data-task="t508" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Your real-failure story from Week 9 — rehearse telling it calmly and specifically</span></li>
               </ul>
             </div>
+          </div>
+          <div class="obs-thread-block">
+            <p class="obs-thread-label">✍️ Write-up template (opinionated — 1 of 4)</p>
+            <p style="font-size:13px;color:var(--text-secondary);line-height:1.6;margin-bottom:10px;">Juniors describe what they built. Seniors take a position. Swap one of your four write-ups for this format instead of another "how I built X" post — it signals seniority and is more likely to get shared.</p>
+            <ul class="wb-list">
+              <li class="task" data-task="t509" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Pick a real, slightly contrarian stance you can defend from direct experience (e.g. "fine-tuning is overrated for most RAG use cases — here's when it's actually worth it," "why I chose pgvector over Pinecone and you probably should too")</span></li>
+              <li class="task" data-task="t510" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Back it with a specific number or incident from your own systems, not just opinion</span></li>
+              <li class="task" data-task="t511" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Take an actual side — don't hedge into "it depends" by the end</span></li>
+            </ul>
           </div>
           <div class="wb-stack">
             <p class="wb-stack-label">Publish on</p>
@@ -3270,20 +3294,20 @@
           </div>
           <div class="deliverable">
             <p class="deliverable-label">↳ Deliverable</p>
-            <p class="deliverable-summary">3 technical write-ups + 1 flagship case study. A technical post on how you benchmarked chunking strategies gets more recruiter attention than another GitHub repo. It demonstrates you can reason and communicate.</p>
+            <p class="deliverable-summary">4+ write-ups (3 descriptive + 1 opinionated) + 1 flagship case study. A technical post on how you benchmarked chunking strategies gets more recruiter attention than another GitHub repo — and an opinionated post signals seniority in a way "how I built X" doesn't.</p>
             <div class="deliverable-spec">
               <div class="spec-block output">
                 <p class="spec-block-label">What you'll output</p>
                 <ul class="spec-list">
-                  <li class="task" data-task="t183" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">4 published posts (Substack/Medium/GitHub README), each linked from your resume</span></li>
-                  <li class="task" data-task="t184" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">A one-paragraph answer ready for "tell me about a project" for each of your 3 projects</span></li>
+                  <li class="task" data-task="t183" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">4+ published posts (including the Week 8 observability case study and one opinionated post), each linked from your resume</span></li>
+                  <li class="task" data-task="t184" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">A one-paragraph answer ready for "tell me about a project" for each of your projects</span></li>
                 </ul>
               </div>
               <div class="spec-block features">
                 <p class="spec-block-label">Expected features</p>
                 <ul class="spec-list">
-                  <li class="task" data-task="t185" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Every write-up follows the same structure: problem, decisions, numbers, what you'd change</span></li>
-                  <li class="task" data-task="t186" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">At least one concrete metric improvement quoted per write-up (not vague language)</span></li>
+                  <li class="task" data-task="t185" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Descriptive write-ups follow the same structure: problem, decisions, numbers, what you'd change</span></li>
+                  <li class="task" data-task="t186" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">The opinionated write-up takes an actual position and defends it with a real number or incident</span></li>
                   <li class="task" data-task="t187" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">You've rehearsed answering "how would you evaluate this system?" out loud at least once</span></li>
                 </ul>
               </div>
@@ -3292,6 +3316,7 @@
                 <ul class="spec-list">
                   <li class="task" data-task="t188" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">A non-technical friend can understand the problem statement</span></li>
                   <li class="task" data-task="t189" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">A technical friend finds the tradeoffs section credible</span></li>
+                  <li class="task" data-task="t512" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">The opinionated post doesn't hedge into "it depends" by the final paragraph</span></li>
                 </ul>
               </div>
             </div>
@@ -3400,6 +3425,7 @@
                 <ul class="spec-list">
                   <li class="task" data-task="t195" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">By end of this week, you've sent significantly more applications than in any single week prior</span></li>
                   <li class="task" data-task="t196" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">No application sent without first reading the company's product page</span></li>
+                  <li class="task" data-task="t513" onclick="toggleTask(this)"><span class="spec-task-box"></span><span class="spec-task-text">Market-signal checkpoint: note which 2 projects come up most in screens/interviews so far. You've deliberately stayed broad across RAG/agents/infra — this is where real signal turns "not sure yet" into an actual decision.</span></li>
                 </ul>
               </div>
             </div>
@@ -3441,6 +3467,13 @@
             <p class="apptrack-inline-label">🎯 Application track</p>
             <ul class="wb-list">
               <li class="task" data-task="at08" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Keep applying — this doesn't pause for the buffer week</span></li>
+            </ul>
+          </div>
+          <div class="splash-block">
+            <p class="splash-block-label">🎤 Mock interview rehearsal</p>
+            <p class="splash-block-desc">Spend at least half this buffer on rehearsal, not more building. Technical depth you can't articulate fluently doesn't convert to offers — this is as important as any project this week.</p>
+            <ul class="wb-list">
+              <li class="task" data-task="t514" onclick="toggleTask(this)"><span class="task-box"></span><span class="task-text">Record yourself (or use a friend/mock-interview tool) explaining your observability platform and your Week 9 failure story out loud, timed, under mild pressure</span></li>
             </ul>
           </div>
         </div>
